@@ -6,8 +6,10 @@ import (
 	"github.com/jinzhu/gorm"
 )
 
-var MySqlDB *gorm.DB
-
+var (
+	MySqlDB *gorm.DB
+	Logger *logs.BeeLogger
+)
 func init()  {
 	initLog()
 	var err error
@@ -23,11 +25,10 @@ func init()  {
 	Logger.Info("该模型是否存在 ",boo)
 }
 
-var Logger *logs.BeeLogger
+
 func initLog() {
 	Logger = logs.NewLogger()
 	Logger.SetLogger(logs.AdapterMultiFile, `{"filename":"cronpvdata.log","maxdays":10,"color":true}`)
 	Logger.EnableFuncCallDepth(true)
 	Logger.SetLogFuncCallDepth(2)
-	Logger.EnableFuncCallDepth(true)
 }
