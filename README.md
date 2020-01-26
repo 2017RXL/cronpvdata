@@ -22,8 +22,3 @@ SET GOARCH=amd64
 go build -o cronpvdata main.go
 ~~~
 
-#####  注意
-
-~~~
-    过完年停止该服务
-~~~
