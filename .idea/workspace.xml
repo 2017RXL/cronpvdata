@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="198fd0f7-b51d-4df2-84ce-4e770e42a34b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cronpvdata" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cronpvdata.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cronpvdata.log" beforeDir="false" afterPath="$PROJECT_DIR$/cronpvdata.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.go" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
