@@ -49,11 +49,14 @@ func getDataVal()(v float64){
 	data:=[]float64{
 		23,24,25,26,18,29,30,32,17,27,15,16,19,24,
 	}
+	//获取数组中的 随机数
 	return data[RandInt64(1,12)]
 }
 
 func RandInt64(min, max int64) int64 {
-	rand.Seed(time.Now().Unix())
+	//以纳秒为随机种子
+	rand.Seed(time.Now().UnixNano())
+	//rand.Int63n(100) 生成100以内的随机数
 	randNum := rand.Int63n(max - min) + min
 	return randNum
 }
