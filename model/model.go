@@ -58,5 +58,7 @@ func RandInt64(min, max int64) int64 {
 	rand.Seed(time.Now().UnixNano())
 	//rand.Int63n(100) 生成100以内的随机数
 	randNum := rand.Int63n(max - min) + min
+	//休眠1纳秒，避免多次调用时,产生相同的int64值
+	time.Sleep(time.Nanosecond)
 	return randNum
 }
