@@ -12,7 +12,6 @@
 2. 最好的方案，同时创建一套硬件设备齐全的电站
 3. 修改统计数据，只是为演示做准备
 
-
 ##### 编译linux 可执行文件
 
 ~~~
@@ -22,3 +21,6 @@ SET GOARCH=amd64
 go build -o cronpvdata main.go
 ~~~
 
+##### 部署
+- 将编译好的程序放在；linux服务器上执行即可
+- 启动命令 nohup  ./cronpvdata &
