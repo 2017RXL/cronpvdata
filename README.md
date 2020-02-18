@@ -24,9 +24,4 @@ go build -o cronpvdata main.go
 ##### 部署
 - 将编译好的程序放在；linux服务器上执行即可
 - 启动命令 nohup  ./cronpvdata &
-
-
-
-
-
-                                            2020-01-27 
+- 需要定时检查openvpn 是否在正常运行
