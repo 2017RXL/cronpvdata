@@ -28,7 +28,8 @@ func init()  {
 
 func initLog() {
 	Logger = logs.NewLogger()
-	Logger.SetLogger(logs.AdapterMultiFile, `{"filename":"cronpvdata.log","maxdays":10,"color":true}`)
+	Logger.SetLogger("console")
+	Logger.SetLogger(logs.AdapterFile, `{"filename":"cronpvdata.log","daily":true,"maxdays":10,"color":true}`)
 	Logger.EnableFuncCallDepth(true)
 	Logger.SetLogFuncCallDepth(2)
 }
